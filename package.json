@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx app/ pages/",
+    "lint:fix": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx --fix app/ pages/"
   },
   "dependencies": {
     "@next/font": "13.1.2",
@@ -17,6 +18,7 @@
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
     "eslint-config-next": "13.1.2",
+    "framer-motion": "^8.4.3",
     "next": "13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
