@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/rvirani1/openai-talk/actions/workflows/<WORKFLOW_FILE>/badge.svg
+[![Build Status](https://github.com/rvirani1/openai-talk/actions/workflows/ci/badge.svg
 )](https://github.com/ellerbrock/open-source-badges/)
 [![Build Status](https://travis-ci.org/Hexient-Labs/hence-form.svg?branch=master)](https://travis-ci.org/Hexient-Labs/hence-form)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
