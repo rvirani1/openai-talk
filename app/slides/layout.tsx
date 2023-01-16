@@ -1,10 +1,21 @@
-export default function Head () {
+'use client'
+
+import React from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { usePathname } from 'next/navigation'
+import { AnimationContext } from '@/app/slides/AnimationContext'
+
+export default function Layout ({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+  const { direction } = React.useContext(AnimationContext)
   return (
-    <>
-      <title>Open AI Talk</title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="OpenAI Talk by Riaz Virani" />
-      <link rel="icon" href="/favicon.ico" />
-    </>
+    <AnimationContext.Provider value={{}}>
+      <AnimatePresence mode="wait" initial={false} custom={direction}>
+        <React.Fragment key={pathname}>
+          {children}
+        </React.Fragment>
+      </AnimatePresence>
+    </AnimationContext.Provider>
+
   )
 }
