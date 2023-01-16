@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Build Status](https://github.com/rvirani1/openai-talk/actions/workflows/<WORKFLOW_FILE>/badge.svg
+)](https://github.com/ellerbrock/open-source-badges/)
+[![Build Status](https://travis-ci.org/Hexient-Labs/hence-form.svg?branch=master)](https://travis-ci.org/Hexient-Labs/hence-form)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-## Getting Started
 
-First, run the development server:
+<p align="center">
+  <img src="readme_images/banner.jpeg">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Crazy about ChatGPT: Learn how to use OpenAI's SDK in your Own Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* [Overview](#overview)
+* [Deployment](#deployment)
+* [Running Locally](#running-locally)
+* [License](#license)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Want to run and mess with this presentation / project yourself? It's simple.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Use the Vercel Deploy button below and set the required configuration
+values on the next page
 
-## Learn More
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frvirani1%2Fopenai-talk)
 
-To learn more about Next.js, take a look at the following resources:
+# Running Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Install the Node Version specified in the `package.json`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the Repo and `cd` into it
 
-## Deploy on Vercel
+1. Install Node dependencies via `npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Copy the `.env.example` file to `.env`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Set all values in the `.env` file.
+   This is already gitignored so don't worry about committing it.
+
+1. Run the dev server using `npm run dev`
+
+# License
+
+This project is licensed under the MIT license
