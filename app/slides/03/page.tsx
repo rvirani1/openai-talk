@@ -1,13 +1,14 @@
 'use client'
 
-import { Animated } from '@/app/slides/Animated'
-import Link from 'next/link'
+import { Animated } from '@/app/slides/_components/Animated'
 
 export default function Page () {
+  // useEffect(() => { animationProxy.currentPage = 3 }, [])
   return (
     <Animated>
-      <h1>I am page 2</h1>
-      <Link href="/slides/02">Left</Link>
+      <div className="bg-blue-400 w-full h-screen">
+        I am page 3
+      </div>
     </Animated>
   )
 }

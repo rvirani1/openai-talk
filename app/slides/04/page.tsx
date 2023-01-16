@@ -1,12 +1,13 @@
 'use client'
 
 import { Animated } from '@/app/slides/_components/Animated'
+
 export default function Page () {
-  // useEffect(() => { animationProxy.currentPage = 2 }, [])
+  // useEffect(() => { animationProxy.currentPage = 4 }, [])
   return (
     <Animated>
-      <div className="bg-teal-600 w-full h-screen">
-        I am page 2
+      <div className="bg-amber-400 w-full h-screen">
+        I am page 4
       </div>
     </Animated>
   )
