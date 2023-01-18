@@ -1,7 +1,7 @@
 import { useSnapshot } from 'valtio'
 import cn from 'classnames'
 import { Caveat } from '@next/font/google'
-import { dalleProxy } from '@/components/dalle/dalleProxy'
+import { dalleProxy } from '@/components/billion_dollar_idea/dalleProxy'
 
 const caveat = Caveat({ subsets: ['latin'] })
 

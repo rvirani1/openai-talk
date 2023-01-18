@@ -1,6 +1,6 @@
 import { useSnapshot } from 'valtio'
 import cn from 'classnames'
-import { grumpyProxy, Speaker } from '@/components/davinci/grumpyProxy'
+import { grumpyProxy, Speaker } from '@/components/grumpy_chat/grumpyProxy'
 
 export default function ChatLog () {
   const { chatMessages } = useSnapshot(grumpyProxy)

@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Container from '@/components/davinci/Container'
+import Container from '@/components/grumpy_chat/Container'
 
-export default function DavinciPage () {
+export default function GrumpyChatPage () {
   return (
     <>
       <Head>

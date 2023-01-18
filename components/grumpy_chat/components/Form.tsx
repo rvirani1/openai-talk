@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useSnapshot } from 'valtio'
 import { ArrowPathRoundedSquareIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline'
-import { grumpyProxy, Speaker } from '@/components/davinci/grumpyProxy'
+import { grumpyProxy, Speaker } from '@/components/grumpy_chat/grumpyProxy'
 
 export default function Form () {
   const [userInput, setUserInput] = useState('')

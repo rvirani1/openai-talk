@@ -1,7 +1,7 @@
 import { CurrencyDollarIcon } from '@heroicons/react/20/solid'
 import { useSnapshot } from 'valtio'
 import axios from 'axios'
-import { dalleProxy } from '@/components/dalle/dalleProxy'
+import { dalleProxy } from '@/components/billion_dollar_idea/dalleProxy'
 
 export default function RequestButton () {
   const { isLoading } = useSnapshot(dalleProxy)
