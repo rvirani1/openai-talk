@@ -1,4 +1,5 @@
 import Image from 'next/image'
+// @ts-ignore
 import GrumpyGpt from './grumpy-gpt.png'
 import Overview from '@/components/grumpy_chat/components/Overview'
 import Form from '@/components/grumpy_chat/components/Form'
