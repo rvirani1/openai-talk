@@ -15,7 +15,7 @@ export default function Container () {
           <Image src={GrumpyGpt} alt="Logo of a grumpy chat bot" className="h-32 w-auto" />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="py-16 w-full w-[30rem]">
+          <div className="py-16 w-full md:w-[30rem]">
             <Overview />
             <ChatLog />
             <Form />
