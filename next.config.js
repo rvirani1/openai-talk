@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/grumpy-chat',
+        destination: '/grumpy_chat',
         permanent: true
       }
     ]
