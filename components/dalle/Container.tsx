@@ -1,3 +1,27 @@
+import { useSnapshot } from 'valtio'
+import { dalleProxy } from '@/components/dalle/dalleProxy'
+import Overview from '@/components/dalle/components/Overview'
+import RequestButton from '@/components/dalle/components/RequestButton'
+import ResultDisplay from '@/components/dalle/components/ResultDisplay'
+import LoaderModal from '@/components/dalle/components/LoaderModal'
+import Image from 'next/image'
+import MoneyMachineImage from '@/components/dalle/money-machine.png'
+
 export default function Container () {
-  return <h1>Dalle</h1>
+  const { isLoading } = useSnapshot(dalleProxy)
+  return (
+    <div className="flex min-h-screen h-full w-full flex-col bg-white pt-16 pb-12">
+      <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-6 lg:px-8">
+        <div className="flex flex-shrink-0 justify-center">
+          <Image src={MoneyMachineImage} alt="Logo of a grumpy chat bot" className="h-48 w-auto" />
+        </div>
+        <div className="py-16">
+          <Overview />
+          <RequestButton />
+          <ResultDisplay />
+          {isLoading && <LoaderModal />}
+        </div>
+      </main>
+    </div>
+  )
 }
