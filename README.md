@@ -16,17 +16,6 @@
 * [Running Locally](#running-locally)
 * [License](#license)
 
-## Overview
-
-## Deployment
-
-Want to run and mess with this presentation / project yourself? It's simple.
-
-Use the Vercel Deploy button below and set the required configuration
-values on the next page
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frvirani1%2Fopenai-talk)
-
 # Running Locally
 
 1. Install the Node Version specified in the `package.json`
