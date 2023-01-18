@@ -1,17 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true
-  },
-  async redirects () {
-    return [
-      {
-        source: '/',
-        destination: '/slides/01',
-        permanent: true
-      }
-    ]
-  }
-}
+const nextConfig = {}
 
 module.exports = nextConfig

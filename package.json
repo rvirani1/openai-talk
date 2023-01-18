@@ -6,20 +6,25 @@
     "node": "18.13.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx app/ pages/",
-    "lint:fix": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx --fix app/ pages/"
+    "lint": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx components/** pages/** utils/**",
+    "lint:fix": "tsc --noEmit && eslint --cache --ext .ts --ext .tsx --fix components/** pages/** utils/**"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
     "@next/font": "13.1.2",
+    "@tailwindcss/forms": "^0.5.3",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "axios": "^1.2.3",
+    "classnames": "^2.3.2",
     "eslint-config-next": "13.1.2",
     "framer-motion": "^8.4.3",
     "next": "13.1.2",
+    "openai": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-use": "^17.4.0",
