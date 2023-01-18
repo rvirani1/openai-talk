@@ -5,7 +5,9 @@ import RequestButton from '@/components/billion_dollar_idea/components/RequestBu
 import ResultDisplay from '@/components/billion_dollar_idea/components/ResultDisplay'
 import LoaderModal from '@/components/billion_dollar_idea/components/LoaderModal'
 import Image from 'next/image'
+// @ts-ignore
 import MoneyMachineImage from '@/components/billion_dollar_idea/money-machine.png'
+// @ts-ignore
 import AttributionFooter from '@/components/shared/AttributionFooter'
 
 export default function Container () {
